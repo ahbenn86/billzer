@@ -1,9 +1,9 @@
-.App {
+.header {
   text-align: center;
 }
 
 body {
-    background-image: url('../billzer\ copy.png');  
+    background-image: url('../public/billzerlogofinal.png');  
     background-repeat: no-repeat;  
     background-size: auto;
     
