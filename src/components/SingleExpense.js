@@ -1,18 +1,16 @@
 import './SingleExpense.css';
+import ExpenseDate from './ExpenseDate';
 
-function SingleExpense() {
-
-    const billDate = new Date(2022, 3, 2022);
-    const billTitle = 'Car insurance';
-    const billAmount = 294.67;
+function SingleExpense(billData) {
+  
 
   return (
     <div className="single-expense">
-      <div className="single-expense__date">{billDate.toISOString()}</div>
+      <ExpenseDate date={billData.date}/>
       <div className="single-expense__title">
-        <h2>{billTitle}</h2>
+        <h2>{billData.title}</h2>
       </div>
-      <div className="single-expense__total">${billAmount}</div>
+      <div className="single-expense__total">${billData.amount}</div>
     </div>
   );
 }

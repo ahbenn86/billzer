@@ -29,10 +29,32 @@ function App() {
     <div className="header">
       <h1>Billzer</h1>
       <div>
-        <SingleExpense />
-        <SingleExpense />
-        <SingleExpense />
-        <SingleExpense />
+        <SingleExpense
+          title={bills[0].title}
+          amount={bills[0].amount}
+          date={bills[0].date}
+        />
+      </div>
+      <div>
+        <SingleExpense
+          title={bills[1].title}
+          amount={bills[1].amount}
+          date={bills[1].date}
+        />
+      </div>
+      <div>
+        <SingleExpense
+          title={bills[2].title}
+          amount={bills[2].amount}
+          date={bills[2].date}
+        />
+      </div>
+      <div>
+        <SingleExpense
+          title={bills[3].title}
+          amount={bills[3].amount}
+          date={bills[3].date}
+        />
       </div>
     </div>
   );
