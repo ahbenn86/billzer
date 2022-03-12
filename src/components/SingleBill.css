@@ -1,4 +1,4 @@
-.single-expense {
+.single-bill {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -7,10 +7,10 @@
     margin: 1rem 0;
     border: 1px solid rgb(182, 181, 181);
     border-radius: 25px;
-    background-color: rgb(233, 233, 38);
+    background-color: rgb(233, 233, 38, 0.7);
   }
   
-  .single-expense h2 {
+  .single-bill h2 {
     font-size: 1rem;
     flex: 1;
     margin: 0 1rem;
@@ -21,7 +21,7 @@
     border-radius: 25px;
   }
   
-  .single-expense__total {
+  .single-bill__total {
     font-size: 1rem;
     font-weight: bold;
     color: white;
@@ -32,18 +32,18 @@
   }
   
   @media (min-width: 580px) {
-    .single-expense__title {
+    .single-bill__title {
       flex-direction: row;
       align-items: center;
       justify-content: flex-start;
       flex: 1;
     }
   
-    .single-expense__title h2 {
+    .single-bill__title h2 {
       font-size: 1.25rem;
     }
   
-    .single-expense__total {
+    .single-bill__total {
       font-size: 1.25rem;
       padding: 0.5rem 1.5rem;
     }
