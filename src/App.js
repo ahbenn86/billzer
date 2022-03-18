@@ -1,6 +1,5 @@
-import SingleBill from "./components/SingleBill";
-
 import "./App.css";
+import Bills from "./components/Bills";
 
 function App() {
   const bills = [
@@ -26,36 +25,8 @@ function App() {
   ];
 
   return (
-    <div className="header">
-      <h1>Billzer</h1>
-      <div>
-        <SingleBill
-          title={bills[0].title}
-          amount={bills[0].amount}
-          date={bills[0].date}
-        />
-      </div>
-      <div>
-        <SingleBill
-          title={bills[1].title}
-          amount={bills[1].amount}
-          date={bills[1].date}
-        />
-      </div>
-      <div>
-        <SingleBill
-          title={bills[2].title}
-          amount={bills[2].amount}
-          date={bills[2].date}
-        />
-      </div>
-      <div>
-        <SingleBill
-          title={bills[3].title}
-          amount={bills[3].amount}
-          date={bills[3].date}
-        />
-      </div>
+    <div>
+      <Bills items={bills} />
     </div>
   );
 }
